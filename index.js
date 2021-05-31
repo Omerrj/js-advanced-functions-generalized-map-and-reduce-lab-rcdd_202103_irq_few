@@ -5,7 +5,7 @@ const map=(src, callback) =>{
   let r = []
 for (let i = 0; i < src.length; i++) {
     let theElement = src[i]
-    r.push(cb(theElement))
+    r.push(callback(theElement))
   }
 
   return r;
