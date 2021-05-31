@@ -16,7 +16,7 @@ const reduce=(src, callback, starting)=>{
   let i = (starting) ? 0 : 1
 
   for (; i < src.length; i++) {
-    r = cb(src[i], r)
+    r = callback(src[i], r)
   }
 
   return r;
